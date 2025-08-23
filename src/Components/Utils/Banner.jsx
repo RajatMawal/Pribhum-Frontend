@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaSearchLocation } from "react-icons/fa";
 import { MdLocationPin } from "react-icons/md";
 import { FaUsers } from "react-icons/fa6";
-import banner from "../../assets/bannerImg.jpeg";
+import banner from "../../assets/BannerImg.jpeg";
 import { useDispatch, useSelector } from "react-redux";
 import { allProperty } from "../../../redux/Slice/propertySlice";
 import { useNavigate } from "react-router-dom";
