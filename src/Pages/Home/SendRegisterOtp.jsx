@@ -5,8 +5,8 @@ import details from "../../assets/magnify.gif"
 import security from "../../assets/security.gif"
 import { Button, TextField } from "@mui/material";
 import { toast } from "react-toastify";
-import { sendOtp, verifyOtp } from "../../../redux/Slice/otpSLice";
 import { VscArrowLeft } from "react-icons/vsc";
+import { sendOtp, verifyOtp } from "../../../redux/Slice/otpSlicee.js";
 
 
 const SendRegisterOtp= () => {
