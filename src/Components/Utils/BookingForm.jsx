@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import brand from '../../assets/Logo.png'; 
 import { useDispatch } from 'react-redux';
 import { enquiry } from '../../../redux/Slice/propertySlice';
 import { toast } from "react-toastify";
@@ -44,7 +43,6 @@ const handleSubmit = async(e)=>{
     <div className="lg:col-span-1 animate-fade-in space-y-6">
 
       <div className="mt-6 bg-white shadow-[0_-4px_10px_rgba(0,0,0,0.1)] rounded-xl p-6">
-        <img src={brand} alt="Brand" className="w-[20vw] h-20 object-cover rounded-lg mb-4" />
 
         <form className="space-y-4" onSubmit={handleSubmit}>
           <div>
