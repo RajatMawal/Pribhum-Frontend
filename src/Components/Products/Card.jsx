@@ -10,7 +10,7 @@ const Card = (products ) => {
   
   const imagePath =
     product.Images && product.Images.length > 0
-      ? `http://localhost:8000/${product.Images[0].replace(/\\/g, "/")}`
+      ? `https://pribhum-backend.vercel.app/${product.Images[0].replace(/\\/g, "/")}`
       : "https://via.placeholder.com/300x200?text=No+Image";
 
   const viewFullDetails = (id) => {
