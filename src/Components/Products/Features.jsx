@@ -3,41 +3,69 @@ import { GiTakeMyMoney, GiMeal, GiWifiRouter, GiHomeGarage } from "react-icons/g
 const Features = () => {
   const features = [
     {
-      icon: <GiTakeMyMoney className="text-4xl text-blue-600" />,
+      icon: <GiTakeMyMoney className="text-5xl text-white" />,
       title: "No Brokerage",
-      description: "Search 1000+ PG accommodations here without any brokerage or commission charge",
+      description:
+        "Search 1000+ PG accommodations here without any brokerage or commission charge",
+      color: "from-blue-500 to-indigo-600",
     },
     {
-      icon: <GiMeal className="text-4xl text-blue-600" />,
+      icon: <GiMeal className="text-5xl text-white" />,
       title: "Homely Meals",
-      description: "Nutritious home-style food options available in most of the PGs",
+      description:
+        "Nutritious home-style food options available in most of the PGs",
+      color: "from-pink-500 to-red-500",
     },
     {
-      icon: <GiWifiRouter className="text-4xl text-blue-600" />,
+      icon: <GiWifiRouter className="text-5xl text-white" />,
       title: "High-Speed Wi-Fi",
-      description: "Enjoy uninterrupted connectivity with high-speed internet in every room",
+      description:
+        "Enjoy uninterrupted connectivity with high-speed internet in every room",
+      color: "from-green-500 to-emerald-600",
     },
     {
-      icon: <GiHomeGarage className="text-4xl text-blue-600" />,
-      title: "Parking Facility",
-      description: "Safe and secure parking for your two-wheeler and four-wheeler",
+      icon: <GiHomeGarage className="text-5xl text-white" />,
+      title: "Shifting PG (Coming Soon)",
+      description:
+        "If you are not comfortable in your old PG, you will have the facility to shift hassle-free",
+      color: "from-yellow-500 to-orange-500",
     },
   ];
 
   return (
-  <div className="px-6 py-12 bg-gradient-to-t from-white via-[#e0f7f5] to-white">
-
-      <div className="text-center mb-10">
-        <h1 className="text-3xl font-bold text-gray-800">Why Choose Us?</h1>
-        <p className="text-gray-600 mt-2">Discover the benefits of staying with us</p>
+    <div className="px-6 py-16 bg-gradient-to-b from-[[#f0fdfa] via-[#e0f7f5] to-white">
+      {/* Heading */}
+      <div className="text-center mb-14">
+        <h1 className="text-4xl font-extrabold text-gray-800">
+          🌟 Why Choose <span className="text-teal-600">Us?</span>
+        </h1>
+        <p className="text-gray-600 mt-3 text-lg">
+          Discover the colorful benefits of staying with Pribhum Nest
+        </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto ">
+      {/* Feature Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
         {features.map((item, index) => (
-          <div key={index} className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition-transform duration-400 ease-in-out border-t-7 border-[#0ABAB5] hover:scale-110">
-            <div className="mb-4 ">{item.icon}</div>
-            <h3 className="text-lg font-semibold text-gray-700 mb-2">{item.title}</h3>
-            <p className="text-gray-500 text-sm">{item.description}</p>
+          <div
+            key={index}
+            className={`rounded-2xl shadow-lg p-6 flex flex-col items-center text-center 
+              bg-gradient-to-br ${item.color} transform transition duration-500 hover:scale-110 hover:-translate-y-2 hover:shadow-2xl`}
+          >
+            {/* Icon Circle */}
+            <div className="bg-white/20 backdrop-blur-md rounded-full p-6 mb-4 shadow-inner">
+              {item.icon}
+            </div>
+
+            {/* Title */}
+            <h3 className="text-xl font-bold text-white drop-shadow mb-2">
+              {item.title}
+            </h3>
+
+            {/* Description */}
+            <p className="text-white/90 text-sm leading-relaxed">
+              {item.description}
+            </p>
           </div>
         ))}
       </div>

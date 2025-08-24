@@ -31,6 +31,7 @@ import LoginRedirect from "./Pages/Admin/LoginRedirect.jsx";
 import { Loader } from "./Components/Utils/Loader.jsx";
 import SendRegisterOtp from "./Pages/Home/SendRegisterOtp.jsx";
 import { ProtectedRegister } from "./Pages/Admin/ProtectedRegister.jsx";
+import AuthRedirect from "./Components/Utils/AuthRedirect.jsx";
 
 
 const App = () => {
@@ -51,15 +52,16 @@ const App = () => {
     dispatch(getAccess()).unwrap();
   }, []);
 
+  console.log(isAuthenticated)
+
   if (loading) {
     return  <Loader/>
   }
 
   return (
     <>
-     <isAuthenticated isAuthenticated={isAuthenticated}/>
+     {/* <AuthRedirect isAuthenticated={isAuthenticated}/> */}
       <Routes>
-        {/* USER ROUTES */}
         <Route path="/" element={<UserLayout />}>
           <Route index element={<Home />} />
           <Route path="pg-details/:id" element={<PgDetails />} />

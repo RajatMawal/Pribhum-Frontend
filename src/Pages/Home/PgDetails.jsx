@@ -20,6 +20,7 @@ const PgDetails = () => {
   const id = location.pathname.replace("pg-details", "").replace(/\//g, "")
 
 
+
   useEffect(()=>{
     if(property.length === 0){
       dispatch(allProperty())

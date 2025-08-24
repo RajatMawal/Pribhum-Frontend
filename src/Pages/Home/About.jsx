@@ -1,41 +1,116 @@
 import React from "react";
+import { FaHandshake, FaHome, FaUserFriends, FaShieldAlt, FaMoneyBillWave } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal-50 to-green-100 px-6 py-16 text-gray-800 mt-15">
-      <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-xl p-10">
-        <h1 className="text-4xl font-bold text-teal-700 mb-6 border-b-4 border-teal-400 inline-block">
-          About Pribhum Nest
-        </h1>
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-teal-50 to-blue-50 px-6 py-16 text-gray-800">
+      <div className="max-w-6xl mx-auto space-y-16">
+        {/* Title Section */}
+        <div className="text-center">
+          <h1 className="text-5xl font-extrabold text-teal-700 mb-4">
+            About <span className="text-green-600">Pribhum Nest</span>
+          </h1>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            A student-first platform to simplify your PG journey in Delhi & beyond.
+          </p>
+        </div>
 
-        <p className="mb-6 text-lg leading-relaxed">
-          <strong>Pribhum Nest</strong> is an online mutual support network for students and working professionals looking for PGs and Hostels across India. With years of experience and a deep understanding of tenant needs, we help you find accommodation that perfectly fits your lifestyle and budget.
-        </p>
+        {/* Our Story */}
+        <div className="bg-white rounded-3xl shadow-xl p-10">
+          <h2 className="text-3xl font-bold text-teal-700 mb-6 flex items-center gap-2">
+            🧡 Our Story – How It All Began
+          </h2>
+          <p className="text-lg leading-relaxed mb-4 italic">
+            “We didn’t just build a platform — we built a solution we once needed.”
+          </p>
+          <p className="text-lg leading-relaxed mb-6">
+            I’m <strong>Prince Kanojia</strong>, a student of Dyal Singh College, Delhi University.  
+            And I’m <strong>Bhumika Joshi</strong>, a student from Haryana, who came to Delhi to pursue coding classes.  
+          </p>
+          <p className="text-lg leading-relaxed mb-6">
+            When Bhumika first arrived in Delhi, finding a PG felt like the toughest part of settling in.  
+            From poor food to unsafe localities and mismatched roommates — every day was a new challenge.  
+          </p>
+          <div className="bg-teal-50 border-l-4 border-teal-400 px-6 py-4 rounded-lg mb-6">
+            <p className="text-lg leading-relaxed">
+              She finally shifted to a flat… but it came with:  
+              <span className="block">💸 High brokerage fees</span>
+              <span className="block">🚚 Shifting expenses</span>
+              <span className="block">🔄 Constantly changing flats</span>
+            </p>
+          </div>
+          <p className="text-lg leading-relaxed">
+            That’s when we realized — if <strong>we</strong> as connected students faced this much hassle,  
+            what about others?  
+          </p>
+          <p className="text-lg leading-relaxed mt-4 font-semibold text-teal-700">
+            That’s how <strong>Pribhum Nest</strong> was born: A platform built by students, for students —  
+            to make living in Delhi easier, safer, and more homely.
+          </p>
+        </div>
 
-        <p className="mb-6 text-lg leading-relaxed">
-          We operate directly with property owners and tenants to simplify the process of <strong>searching, visiting, negotiating, renting, and managing</strong> PG/Hostel spaces. Whether you're a student, traveler, or a working professional, our team is dedicated to helping you find the ideal place quickly and stress-free.
-        </p>
+        {/* Who We Are */}
+        <div className="bg-gradient-to-r from-teal-600 to-green-500 text-white rounded-3xl shadow-xl p-10">
+          <h2 className="text-3xl font-bold mb-6">🏠 Who We Are</h2>
+          <p className="text-lg leading-relaxed mb-4">
+            Pribhum Nest is a <strong>student-first platform</strong> designed to make PG finding easier, safer, and more personalized for Delhi University students.
+          </p>
+          <p className="text-lg leading-relaxed">
+            We stand for <strong>comfort, community, and clarity</strong>.  
+            Our aim is to build a space where students feel at home — even miles away from home.
+          </p>
+        </div>
 
-        <div className="bg-teal-100 rounded-xl p-6 mb-6 shadow-sm">
-          <h2 className="text-2xl font-semibold text-teal-800 mb-3">Why Choose Us?</h2>
-          <ul className="list-disc list-inside space-y-2 text-lg">
-            <li><strong>Saving Time:</strong> Quick and easy rental process.</li>
-            <li><strong>Saving Money:</strong> Affordable and transparent pricing.</li>
-            <li><strong>Building Relationships:</strong> Long-term support and connections.</li>
+        {/* Mission */}
+        <div className="bg-white rounded-3xl shadow-xl p-10">
+          <h2 className="text-3xl font-bold text-teal-700 mb-6">🎯 Our Mission</h2>
+          <ul className="space-y-3 text-lg list-disc list-inside text-gray-700">
+            <li>Help students settle in Delhi with the right people, in the right place, at the right price.</li>
+            <li>Build a stress-free living environment.</li>
+            <li>Match students with PGs based on <strong>college, comfort & culture</strong>.</li>
+            <li>Ensure <strong>verified & transparent</strong> PG listings.</li>
+            <li>Empower students to rate & review their PGs — making life easier for the next student.</li>
           </ul>
         </div>
 
-        <p className="mb-6 text-lg leading-relaxed">
-          Since 2019, we’ve been helping people in the tourism and service industry across India with rental and lease needs — from short stays to long-term accommodations. Our platform is trusted by students, corporate professionals, business travelers, and more.
-        </p>
+        {/* Why Choose Us */}
+        <div className="bg-gradient-to-br from-yellow-50 to-orange-100 rounded-3xl shadow-xl p-10">
+          <h2 className="text-3xl font-bold text-orange-600 mb-6">💙 Why Choose Us?</h2>
+          <div className="grid md:grid-cols-2 gap-6 text-lg">
+            <div className="flex items-start gap-3">
+              <FaUserFriends className="text-orange-500 text-2xl mt-1" />
+              <p><strong>Match with same-college students</strong></p>
+            </div>
+            <div className="flex items-start gap-3">
+              <FaHome className="text-orange-500 text-2xl mt-1" />
+              <p><strong>Verified PGs</strong> with transparent rent & food details</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <FaHandshake className="text-orange-500 text-2xl mt-1" />
+              <p><strong>No brokers, no hidden fees</strong></p>
+            </div>
+            <div className="flex items-start gap-3">
+              <FaMoneyBillWave className="text-orange-500 text-2xl mt-1" />
+              <p><strong>Value for money</strong> – affordable, clean, and reliable PGs</p>
+            </div>
+            <div className="flex items-start gap-3">
+              <FaShieldAlt className="text-orange-500 text-2xl mt-1" />
+              <p><strong>Safe & supportive</strong> environment</p>
+            </div>
+          </div>
+        </div>
 
-        <p className="mb-6 text-lg leading-relaxed">
-          Whether you're looking to <strong>rent a room</strong> or <strong>list your property</strong>, Pribhum Nest is here to support you with efficient service and a user-friendly experience.
-        </p>
-
-        <div className="mt-10 text-center">
-          <p className="text-xl font-semibold text-gray-700">Join our community and simplify your rental journey today!</p>
-          <p className="text-sm text-gray-500 mt-2">For more info, contact us at: <a href="mailto:info@pgchoice.com" className="text-teal-600 font-medium">support@Pribhumnest.in</a></p>
+        {/* Closing */}
+        <div className="text-center">
+          <h2 className="text-2xl font-semibold text-teal-700">
+            🤝 Not Just PGs, We Build Relationships
+          </h2>
+          <p className="mt-4 text-lg text-gray-600">
+            Share your space. Share your journey. Build your college squad from Day 1.  
+          </p>
+          <p className="mt-6 text-gray-500">
+            📍 Delhi NCR | 📧 <a href="mailto:support@Pribhumnest.in" className="text-teal-600 font-medium">support@Pribhumnest.in</a>
+          </p>
         </div>
       </div>
     </div>
