@@ -52,7 +52,6 @@ const App = () => {
     dispatch(getAccess()).unwrap();
   }, []);
 
-  console.log(isAuthenticated)
 
   if (loading) {
     return  <Loader/>
@@ -60,7 +59,7 @@ const App = () => {
 
   return (
     <>
-     {/* <AuthRedirect isAuthenticated={isAuthenticated}/> */}
+     <AuthRedirect isAuthenticated={isAuthenticated}/>
       <Routes>
         <Route path="/" element={<UserLayout />}>
           <Route index element={<Home />} />
