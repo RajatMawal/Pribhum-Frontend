@@ -24,6 +24,7 @@ const Login = () => {
   
   const dispatch = useDispatch()
 
+  const BACKEND_URL = import.meta.env.VITE_BACKEND_URL; 
 
 
   const handleVisiblePassword = () => {
@@ -52,7 +53,7 @@ const handleSubmit = async (values) => {
 };
 
   const loginWithGoogle =()=>{
-    window.location.href = 'http://localhost:8000/auth/google'
+    window.location.href = `${BACKEND_URL}/auth/google` // changed
   }
 
 

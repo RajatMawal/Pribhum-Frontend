@@ -1,4 +1,5 @@
 import { GiTakeMyMoney, GiMeal, GiWifiRouter, GiHomeGarage } from "react-icons/gi";
+import { FaUsers} from "react-icons/fa";
 
 const Features = () => {
   const features = [
@@ -17,11 +18,11 @@ const Features = () => {
       color: "from-pink-500 to-red-500",
     },
     {
-      icon: <GiWifiRouter className="text-5xl text-white" />,
-      title: "High-Speed Wi-Fi",
-      description:
-        "Enjoy uninterrupted connectivity with high-speed internet in every room",
-      color: "from-green-500 to-emerald-600",
+       icon: <FaUsers className="text-5xl text-white" />,
+    title: "We Provide Same College Members in PG (Coming Soon)",
+    description:
+      "Enjoy staying with PG members from the same college for a comfortable environment",
+    color: "from-green-500 to-emerald-600",
     },
     {
       icon: <GiHomeGarage className="text-5xl text-white" />,
