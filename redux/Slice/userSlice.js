@@ -66,7 +66,7 @@ export const getAccess = createAsyncThunk(
       const response = await axios.get(`${URL}/api/user/getAccess`,{withCredentials:true})
       return response.data
     } catch (error) {
-      return thunkApi.rejectWithValue(error)
+      return thunkApi.rejectWithValue(error.response.data)
     }
   }
 )

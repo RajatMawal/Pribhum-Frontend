@@ -7,6 +7,8 @@ import BookingForm from "../../Components/Utils/BookingForm";
 import { IoChevronBack , IoChevronForward } from "react-icons/io5";
 import {useDispatch, useSelector} from "react-redux"
 import { allProperty } from "../../../redux/Slice/propertySlice";
+import noImg from "../../assets/NoImage.png"
+
 
 const PgDetails = () => {
 
@@ -48,11 +50,20 @@ const PgDetails = () => {
     : [];
 
 
-  const images = filterDetails && filterDetails.Images.map((item)=>{
-    if(item && item.length > 0)
-      return `https://pribhum-backend.vercel.app/${item.replace(/\\/g, "/")}`
-    else{ return "https://via.placeholder.com/300x200?text=No+Image"}
-  })
+  // const images = filterDetails && filterDetails.Images.map((item)=>{
+  //   if(item && item.length > 0)
+  //     return `https://pribhum-backend.vercel.app/${item.replace(/\\/g, "/")}`
+  //   else{ return noImg}
+  // })
+
+  const images =
+  filterDetails?.Images?.map((item) => {
+    if (item && item.length > 0) {
+      return `https://pribhum-backend.vercel.app/${item.replace(/\\/g, "/")}`;
+    } else {
+      return noImg;
+    }
+  }) || [noImg]; 
   
   const sharing = filterDetails && filterDetails.Sharing
   const extraCharges = [

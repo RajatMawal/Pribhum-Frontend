@@ -2,6 +2,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { MdOutlineFoodBank, MdOutlineBedroomParent } from "react-icons/md";
 import { GiMoneyStack } from "react-icons/gi";
 import { useNavigate } from "react-router-dom";
+import noImg from "../../assets/NoImage.png"
 
 const Card = (products ) => {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ const Card = (products ) => {
   const imagePath =
     product.Images && product.Images.length > 0
       ? `https://pribhum-backend.vercel.app/${product.Images[0].replace(/\\/g, "/")}`
-      : "https://via.placeholder.com/300x200?text=No+Image";
+      : noImg;
 
   const viewFullDetails = (id) => {
     navigate(`/pg-details/${id}`);

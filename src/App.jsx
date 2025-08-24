@@ -48,14 +48,15 @@ const App = () => {
 }, []);
 
 
-  useEffect(() => {
+useEffect(() => {
     dispatch(getAccess()).unwrap();
-  }, []);
+}, []);
 
 
   if (loading) {
     return  <Loader/>
   }
+
 
   return (
     <>
