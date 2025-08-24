@@ -46,16 +46,6 @@ const App = () => {
   };
 }, []);
 
-const navigate = useNavigate()
-
-useEffect(()=>{
-  if(isAuthenticated){
-    setTimeout(()=>{
-      navigate("/login")
-    },15000)
-  }
-}
-,[])
 
   useEffect(() => {
     dispatch(getAccess()).unwrap();
@@ -67,6 +57,7 @@ useEffect(()=>{
 
   return (
     <>
+     <isAuthenticated isAuthenticated={isAuthenticated}/>
       <Routes>
         {/* USER ROUTES */}
         <Route path="/" element={<UserLayout />}>

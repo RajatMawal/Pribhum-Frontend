@@ -7,6 +7,7 @@ import ProductAddOwner from '../Products/ProductAddOwner'
 import Faqs from './Faqs'
 
 const Hero = () => {
+  
   return (
     <>
     <Banner/>
