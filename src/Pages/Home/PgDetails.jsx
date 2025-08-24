@@ -49,7 +49,7 @@ const PgDetails = () => {
 
   const images = filterDetails && filterDetails.Images.map((item)=>{
     if(item && item.length > 0)
-      return `http://localhost:8000/${item.replace(/\\/g, "/")}`
+      return `https://pribhum-backend.vercel.app/${item.replace(/\\/g, "/")}`
     else{ return "https://via.placeholder.com/300x200?text=No+Image"}
   })
   
