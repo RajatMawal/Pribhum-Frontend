@@ -25,7 +25,7 @@ export const addProperty = createAsyncThunk(
 export const allProperty = createAsyncThunk("/allProperty",
   async (_,thunkApi)=>{
     try {
-      const response = await axios.get(`${BASE_URL}/api/property`,{withCredentials:true})
+      const response = await axios.get(`${BASE_URL}/api/property`)
       return response.data
     } catch (error) {
       return thunkApi.rejectWithValue(error)
