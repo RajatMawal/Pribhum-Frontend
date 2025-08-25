@@ -32,6 +32,8 @@ import { Loader } from "./Components/Utils/Loader.jsx";
 import SendRegisterOtp from "./Pages/Home/SendRegisterOtp.jsx";
 import { ProtectedRegister } from "./Pages/Admin/ProtectedRegister.jsx";
 import AuthRedirect from "./Components/Utils/AuthRedirect.jsx";
+import PrivacyPolicy from "./Pages/Home/PrivacyPolicy.jsx";
+import TermsAndConditions from "./Pages/Home/Term&Conditions.jsx";
 
 
 const App = () => {
@@ -67,6 +69,8 @@ useEffect(() => {
           <Route path="pg-details/:id" element={<PgDetails />} />
           <Route path="contact" element={<ContactForm />} />
           <Route path="about" element={<About />} />
+          <Route path="privacyPolicy" element={<PrivacyPolicy/>} />
+          <Route path="termConditions" element={<TermsAndConditions/>} />
           <Route
             path="login"
             element={<LoginRedirect isAuthenticated={isAuthenticated} />}

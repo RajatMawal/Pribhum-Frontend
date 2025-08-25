@@ -7,10 +7,6 @@ const faqs = [
     answer: "We perform background checks, property inspections, and require ownership documents before approving a listing.",
   },
   {
-    question: "What is a PG Captain?",
-    answer: "A PG Captain is our on-ground representative who assists with property visits and resolving tenant concerns.",
-  },
-  {
     question: "How is payment handled?",
     answer: "Payments are securely processed through our platform. Owners receive payments after tenant check-in confirmation.",
   },
@@ -21,6 +17,10 @@ const faqs = [
   {
     question: "How can I verify my property?",
     answer: "Register on our platform and upload documents. Our team will reach out for an on-site or virtual inspection.",
+  },
+  {
+    question: "Can I visit the PG before booking?",
+    answer: "Yes! You can schedule a visit directly from the app or website to see the PG in person before making a decision.",
   },
 ];
 
@@ -64,14 +64,7 @@ const Faqs = () => {
           ))}
         </div>
 
-        <div className="mt-8">
-          <a
-            href="/faqs"
-            className="inline-block text-blue-700 font-medium hover:underline transition"
-          >
-            View All FAQs →
-          </a>
-        </div>
+       
       </div>
     </section>
     </div>

@@ -18,7 +18,7 @@ const Footer = () => {
     <div>
       <h2 className="text-2xl font-bold mb-4">PRIBHUM NEST</h2>
       <p className="text-sm text-gray-300">
-        Address 62 suraj nagar chatar matar park azadpur delhi.
+        Azadpur delhi.
       </p>
       <p className="mt-4 text-gray-400 text-sm">📍 Delhi, India</p>
       <p className="text-gray-400 text-sm">✉️ support@pribhumnest.in</p>
@@ -38,10 +38,8 @@ const Footer = () => {
     <div>
       <h3 className="text-lg font-semibold mb-4">Support</h3>
       <ul className="space-y-3 text-sm">
-        <li><a href="/terms" className="hover:text-teal-300">Terms & Conditions</a></li>
-        <li><a href="/privacy" className="hover:text-teal-300">Privacy Policy</a></li>
-        <li><a href="/feedback" className="hover:text-teal-300">Give Feedback</a></li>
-        <li><a href="/help" className="hover:text-teal-300">Help Center</a></li>
+        <li><NavLink to="termConditions" className="hover:text-teal-300">Terms & Conditions</NavLink></li>
+        <li><NavLink to="/privacyPolicy" className="hover:text-teal-300">Privacy Policy</NavLink></li>
       </ul>
     </div>
 
