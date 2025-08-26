@@ -8,10 +8,12 @@ const Card = (products ) => {
   const navigate = useNavigate();
 
   const product = products.details
+
+  const URL = import.meta.env.VITE_BACKEND_URL
   
   const imagePath =
     product.Images && product.Images.length > 0
-      ? `https://pribhum-backend.vercel.app/${product.Images[0].replace(/\\/g, "/")}`
+      ? `${URL}/${product.Images[0].replace(/\\/g, "/")}`
       : noImg;
 
   const viewFullDetails = (id) => {

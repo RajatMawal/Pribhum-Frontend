@@ -42,8 +42,7 @@ const ContactForm = () => {
               <FaMapMarkerAlt size={22} />
             </div>
             <h3 className="text-lg font-semibold mt-3">Visit Us</h3>
-            <p className="text-gray-600 mt-1 text-sm">
-Address 62 suraj nagar chatar matar park azadpur delhi.</p>
+            <p className="text-gray-600 mt-1 text-sm"> Azadpur delhi.</p>
           </div>
         </div>
       </div>

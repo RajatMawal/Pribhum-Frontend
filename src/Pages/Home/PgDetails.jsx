@@ -50,16 +50,13 @@ const PgDetails = () => {
     : [];
 
 
-  // const images = filterDetails && filterDetails.Images.map((item)=>{
-  //   if(item && item.length > 0)
-  //     return `https://pribhum-backend.vercel.app/${item.replace(/\\/g, "/")}`
-  //   else{ return noImg}
-  // })
+
+  const URL = import.meta.env.VITE_BACKEND_URL
 
   const images =
   filterDetails?.Images?.map((item) => {
     if (item && item.length > 0) {
-      return `https://pribhum-backend.vercel.app/${item.replace(/\\/g, "/")}`;
+      return `${URL}/${item.replace(/\\/g, "/")}`;
     } else {
       return noImg;
     }

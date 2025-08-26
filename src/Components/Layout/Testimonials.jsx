@@ -2,6 +2,10 @@ import React, { useEffect, useState } from "react";
 import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
 import { FaQuoteLeft, FaStar } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
+import rahul from "../../assets/rahulSharma.jpg"
+import sneha from "../../assets/snehaVerma.jpg"
+import amit from "../../assets/amitPatel.jpg"
+
 
 const testimonialsData = [
   {
@@ -9,7 +13,7 @@ const testimonialsData = [
     review:
       "Finding a PG used to be stressful, but PRIBHUM NEST made it so easy. The process was smooth and the property was exactly as shown!",
     location: "Delhi University",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    image: `${rahul}`,
     rating: 5,
   },
   {
@@ -17,7 +21,7 @@ const testimonialsData = [
     review:
       "The best PG experience I’ve had! Safe, clean, and budget-friendly. Highly recommended to all working professionals.",
     location: "Noida Sector 62",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    image:`${sneha}`,
     rating: 4,
   },
   {
@@ -25,7 +29,7 @@ const testimonialsData = [
     review:
       "I moved to Gurgaon recently, and PRIBHUM NEST helped me settle in fast. Their support team is very responsive and friendly.",
     location: "Gurgaon Cyber City",
-    image: "https://randomuser.me/api/portraits/men/76.jpg",
+    image: `${amit}`,
     rating: 5,
   },
 ];

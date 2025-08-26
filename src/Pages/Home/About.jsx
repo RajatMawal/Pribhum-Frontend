@@ -53,7 +53,7 @@ const About = () => {
         <div className="bg-gradient-to-r from-teal-600 to-green-500 text-white rounded-3xl shadow-xl p-10">
           <h2 className="text-3xl font-bold mb-6">🏠 Who We Are</h2>
           <p className="text-lg leading-relaxed mb-4">
-            Pribhum Nest is a <strong>student-first platform</strong> designed to make PG finding easier, safer, and more personalized for Delhi University students.
+            Pribhum Nest is a <strong>student-first platform</strong> designed to make PG finding easier, safer, and more personalized for All University students.
           </p>
           <p className="text-lg leading-relaxed">
             We stand for <strong>comfort, community, and clarity</strong>.  
